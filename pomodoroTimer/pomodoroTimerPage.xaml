@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		xmlns:local="clr-namespace:pomodoroTimer"
+		x:Class="pomodoroTimer.pomodoroTimerPage"
+		Padding="20">
+	
+	<AbsoluteLayout
+			VerticalOptions="FillAndExpand"
+			HorizontalOptions="FillAndExpand">
+		<Button 
+			Margin="0,10,0,0"
+			AbsoluteLayout.LayoutFlags="XProportional,YProportional"
+			AbsoluteLayout.LayoutBounds="1, 0, AutoSize, AutoSize"
+			Font="16"
+			TextColor="#606060"
+			Text="  Reset  "
+			IsVisible="true"
+			BorderColor="#606060"
+			BorderWidth="1"
+			x:Name="resetTimerButton" />
+		<StackLayout Spacing="10"
+				AbsoluteLayout.LayoutFlags="XProportional,YProportional"
+				AbsoluteLayout.LayoutBounds="0.5, 0.5, AutoSize, AutoSize"
+				VerticalOptions="FillAndExpand"
+				HorizontalOptions="FillAndExpand">
+				<Label VerticalOptions="Center"
+					HorizontalOptions="Center"
+					Font="60"
+					TextColor="#D04255"
+					Margin="0,0,0,80"
+					x:Name="leftTime"
+					>25:00</Label>
+				<Button VerticalOptions="Center"
+					HorizontalOptions="Center"
+					Font="80"
+					TextColor="#D04255"
+					Text="▶"
+					x:Name="startTimerButton" />
+				<Button VerticalOptions="Center"
+					HorizontalOptions="FillAndExpand"
+					Font="80"
+					TextColor="#D04255"
+					Text="Ⅱ"
+					IsVisible="false"
+					x:Name="stopTimerButton" />
+		</StackLayout>
+	</AbsoluteLayout>
+</ContentPage>

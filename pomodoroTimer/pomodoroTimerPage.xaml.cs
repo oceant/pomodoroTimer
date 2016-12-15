@@ -17,7 +17,7 @@ namespace pomodoroTimer
 		public const string workingColor = "#D04255";
 		public const string intervalColor = "#3EBA2B";
 
-		public pomodoroTimerPage(int workTime = 3000, int interval = 2000, int longInterval = 4000)
+		public pomodoroTimerPage(int workTime = 1500000, int interval = 300000, int longInterval = 1800000)
 		{
 			InitializeComponent();
 			startTimerButton.Clicked += OnStartTimerButtonClicked;
